@@ -292,7 +292,28 @@
 
         </div>
         </section>
-        <div class="backdrop is-hidden" data-modal><div class="modal"><button class="modal-button" data-modal-close><svg class=" icon icon-close"><use href="./images/icons.svg#icon-close-black"></use></svg></button></div></div>
+        <div class="backdrop is-hidden" data-modal><div class="modal">
+          <form>
+            <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+            <label class="form-label" for="user-name">Имя</label>
+            <span class="form-input-span"><input type="text" name="username" id="user-name" class="form-input"/>
+            <svg class="form-icon"><use href="./images/icons.svg#icon-person"></use></svg></span>
+            <label class="form-label" for="user-tel">Телефон</label>
+            <span class="form-input-span"><input type="tel" name="usertel" id="user-tel" class="form-input"/><svg class="form-icon">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg></span>
+            <label class="form-label" for="user-email">Почта</label>
+            <span class="form-input-span"><input type="email" name="useremail" id="user-email" class="form-input"/><svg class="form-icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg></span>
+            <label class="form-label" for="user-coments">Комментарий</label>
+            <textarea name="feedback" id="user-coments" placeholder="Введите текст" class="form-input form-textarea"></textarea>
+            <div class="form-checkbox"><input type="checkbox" name="agrees" value="agree" id="iagree" class="form-agree" />
+            <label class="form-label checkbox-label" for="iagree"><span class="checkbox-field"><svg class="checkbox-icon"><use href="./images/icons.svg#icon-check"></use></svg></span>Соглашаюсь с рассылкой и принимаю <a href="" class="form-link">Условия договора</a></label></div>
+            <button type="submit" class="button form-button">Отправить</button>
+            
+          </form>
+          <button class="modal-button" data-modal-close><svg class=" icon icon-close"><use href="./images/icons.svg#icon-close-black"></use></svg></button></div></div>
     </main>
     <footer class="footer">
       <div class="container footer-container">
@@ -344,6 +365,13 @@
         </ul>
        
       </div>
+       <form class="footer-form">
+         <p class="form-footer-text">Подпишитесь на рассылку</p>
+         <div class="footer-form-div"><input type="email" name="email" placeholder="E-mail" class="footer-form-input"/>
+         <button type="submit" class="form-footer-button button">Подписаться<svg class="form-footer-icon"><use href="./images/icons.svg#icon-send"/></svg></use></button></div>
+
+        </form>
+      
       </div>
     </footer>
     <script src="./js/modal.js"></script>
